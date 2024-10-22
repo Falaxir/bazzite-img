@@ -29,7 +29,7 @@ RELEASE="$(rpm -E %fedora)"
 
 
 # Netbird
-sudo tee /etc/yum.repos.d/netbird.repo <<EOF
+tee /etc/yum.repos.d/netbird.repo <<EOF
 [netbird]
 name=netbird
 baseurl=https://pkgs.netbird.io/yum/
@@ -39,10 +39,10 @@ gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 repo_gpgcheck=1
 EOF
 
-sudo dnf config-manager --add-repo /etc/yum.repos.d/netbird.repo
+dnf config-manager --add-repo /etc/yum.repos.d/netbird.repo
 
-sudo dnf install netbird
+dnf install netbird
 
 
 # Xpipe
-bash <(curl -sL https://github.com/xpipe-io/xpipe/raw/master/get-xpipe.sh)
+bash /tmp/get-xpipe.sh
