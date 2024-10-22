@@ -27,6 +27,9 @@ RELEASE="$(rpm -E %fedora)"
 # Package Install
 # ===========================
 
+#Others
+dnf install -y screen
+
 
 # Netbird
 tee /etc/yum.repos.d/netbird.repo <<EOF
@@ -39,11 +42,9 @@ gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 repo_gpgcheck=1
 EOF
 
-dnf install 'dnf-command(config-manager)'
+dnf makecache
 
-dnf config-manager --add-repo /etc/yum.repos.d/netbird.repo
-
-dnf install netbird
+dnf install -y netbird
 
 
 # Xpipe
