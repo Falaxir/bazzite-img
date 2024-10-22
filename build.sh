@@ -42,8 +42,6 @@ gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 repo_gpgcheck=1
 EOF
 
-dnf makecache
-
 dnf install -y netbird
 
 
