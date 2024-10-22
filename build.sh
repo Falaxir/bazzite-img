@@ -43,7 +43,3 @@ repo_gpgcheck=1
 EOF
 
 dnf install -y netbird
-
-
-# Xpipe
-bash /tmp/get-xpipe.sh

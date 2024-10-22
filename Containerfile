@@ -50,7 +50,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
 COPY build.sh /tmp/build.sh
 
-COPY scripts/get-xpipe.sh /tmp/get-xpipe.sh
+## COPY scripts/get-xpipe.sh /tmp/get-xpipe.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
