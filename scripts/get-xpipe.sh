@@ -111,7 +111,7 @@ install() {
       zypper install --allow-unsigned-rpm "$file"
     elif [ -x "$(command -v dnf)" ]; then
       info "Installing file $file with dnf"
-      dnf install --refresh "$file"
+      dnf install "$file"
     elif [ -x "$(command -v yum)" ]; then
       info "Installing file $file with yum"
       yum clean expire-cache
