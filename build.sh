@@ -39,6 +39,8 @@ gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 repo_gpgcheck=1
 EOF
 
+dnf install 'dnf-command(config-manager)'
+
 dnf config-manager --add-repo /etc/yum.repos.d/netbird.repo
 
 dnf install netbird
