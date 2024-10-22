@@ -43,3 +43,7 @@ repo_gpgcheck=1
 EOF
 
 dnf install -y netbird
+
+curl -L "https://github.com/xpipe-io/xpipe/releases/latest/download/xpipe-installer-linux-x86_64.rpm" -o "/tmp/xpipe-installer-linux-x86_64.rpm"
+
+dnf install -y /tmp/xpipe-installer-linux-x86_64.rpm
