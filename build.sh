@@ -46,4 +46,4 @@ dnf install -y netbird
 
 curl -L "https://github.com/xpipe-io/xpipe/releases/latest/download/xpipe-installer-linux-x86_64.rpm" -o "/tmp/xpipe-installer-linux-x86_64.rpm"
 
-dnf install -y --setopt=debuglevel=2 /tmp/xpipe-installer-linux-x86_64.rpm
+dnf install -y -- --setopt=debuglevel=2 /tmp/xpipe-installer-linux-x86_64.rpm
