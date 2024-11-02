@@ -44,7 +44,10 @@ EOF
 
 dnf install -y netbird
 
-#Gstreamer
+#Gstreamer 32bits
+rpm-ostree install gstreamer1.i686 gstreamer1-vaapi.i686 gstreamer1-plugin-libav.i686 gstreamer1-plugins-base.i686 gstreamer1-plugins-good.i686 gstreamer1-plugins-bad-free.i686 gstreamer1-plugins-ugly-free.i686
+
+#Gstreamer 64bits
 rpm-ostree install gstreamer1 gstreamer1-vaapi gstreamer1-plugin-libav gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly-free
 
 # Gstreamer plugins recommanded
