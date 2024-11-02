@@ -44,11 +44,11 @@ EOF
 
 dnf install -y netbird
 
-#TEST 64BIT GSTREAMER
-rpm-ostree install gstreamer1 gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras gstreamer1-plugins-ugly gstreamer1-libav gstreamer1-tools gstreamer1-gtk gstreamer1-qt gstreamer1-alsa gstreamer1-pulseaudio gstreamer1-gl
+# Gstreamer ALL 64 bits
+rpm-ostree install gstreamer1 gstreamer1-devel gstreamer1-plugins-good gstreamer1-plugins-good-extras gstreamer1-plugins-good-gtk gstreamer1-plugins-good-qt gstreamer1-plugins-good-qt6 gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-devel gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-free-fluidsynth gstreamer1-plugins-bad-free-libs gstreamer1-plugins-bad-free-opencv gstreamer1-plugins-bad-free-wildmidi gstreamer1-plugins-bad-free-zbar gstreamer1-plugins-ugly-free gstreamer1-plugins-base gstreamer1-plugins-base-devel gstreamer1-plugins-base-tools gstreamer1-vaapi gstreamer1-vaapi-devel gstreamer1-plugin-openh264 gstreamer1-plugin-libav gstreamer1-plugin-gif gstreamer1-plugin-gtk4
 
-#TEST 32BIT GSTREAMER
-rpm-ostree install gstreamer1.i686 gstreamer1-plugins-base.i686 gstreamer1-plugins-good.i686 gstreamer1-plugins-bad-free.i686 gstreamer1-plugins-bad-free-extras.i686 gstreamer1-plugins-ugly.i686 gstreamer1-libav.i686 gstreamer1-tools.i686 gstreamer1-gtk.i686 gstreamer1-qt.i686 gstreamer1-alsa.i686 gstreamer1-pulseaudio.i686 gstreamer1-gl.i686
+# Gstreamer ALL 32bits
+rpm-ostree install gstreamer1.i686 gstreamer1-devel.i686 gstreamer1-plugins-good.i686 gstreamer1-plugins-good-extras.i686 gstreamer1-plugins-good-gtk.i686 gstreamer1-plugins-good-qt.i686 gstreamer1-plugins-good-qt6.i686 gstreamer1-plugins-bad-free.i686 gstreamer1-plugins-bad-free-devel.i686 gstreamer1-plugins-bad-free-extras.i686 gstreamer1-plugins-bad-free-fluidsynth.i686 gstreamer1-plugins-bad-free-libs.i686 gstreamer1-plugins-bad-free-opencv.i686 gstreamer1-plugins-bad-free-wildmidi.i686 gstreamer1-plugins-bad-free-zbar.i686 gstreamer1-plugins-ugly-free.i686 gstreamer1-plugins-base.i686 gstreamer1-plugins-base-devel.i686 gstreamer1-plugins-base-tools.i686 gstreamer1-vaapi.i686 gstreamer1-vaapi-devel.i686 gstreamer1-plugin-openh264.i686 gstreamer1-plugin-libav.i686 gstreamer1-plugin-gif gstreamer1-plugin-gtk4.i686
 
 #Gstreamer 64bits
 #rpm-ostree install gstreamer1 gstreamer1-vaapi gstreamer1-plugin-libav gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly-free
