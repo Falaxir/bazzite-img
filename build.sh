@@ -44,11 +44,11 @@ EOF
 
 dnf install -y netbird
 
+#Gstreamer 64bits
+rpm-ostree install gstreamer1 gstreamer1-vaapi gstreamer1-plugin-libav gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly-free
+
 #Gstreamer 32bits
 rpm-ostree install gstreamer1.i686 gstreamer1-vaapi.i686 gstreamer1-plugins-base.i686 gstreamer1-plugins-good.i686 gstreamer1-plugins-bad-free.i686 gstreamer1-plugins-ugly-free.i686
-
-#Gstreamer 64bits
-rpm-ostree install gstreamer1.x86_64 gstreamer1-vaapi.x86_64 gstreamer1-plugin-libav gstreamer1-plugins-base.x86_64 gstreamer1-plugins-good.x86_64 gstreamer1-plugins-bad-free.x86_64 gstreamer1-plugins-ugly-free.x86_64
 
 # Gstreamer plugins recommanded
 #rpm-ostree install gstreamer1-devel gstreamer1-plugins-base-tools gstreamer1-doc gstreamer1-plugins-base-devel gstreamer1-plugins-good gstreamer1-plugins-good-extras gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-devel gstreamer1-plugins-bad-free-extras
