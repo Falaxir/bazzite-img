@@ -28,7 +28,7 @@ RELEASE="$(rpm -E %fedora)"
 # ===========================
 
 #Others
-dnf install -y screen
+dnf install -y screen mpv
 
 
 # Netbird
