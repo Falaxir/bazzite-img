@@ -1,3 +1,9 @@
+# Old
+
+Now using custom fedora silverblue image.
+
+Outdated since currenlty not stable and good enough for me and my hardware
+
 # image-template
 
 # Purpose
